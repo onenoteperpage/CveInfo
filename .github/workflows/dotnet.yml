@@ -27,3 +27,6 @@ jobs:
     - name: Install Tree
       run: sudo apt -y update && sudo apt -y install tree
       shell: bash
+    - name:  Tree
+      run: tree
+      shell: bash
