@@ -30,3 +30,5 @@ jobs:
     - name:  Tree
       run: tree
       shell: bash
+    - name: Execute
+      run: dotnet bin/Debug/net7.0/CveInfo.dll CVE-2016-0686
