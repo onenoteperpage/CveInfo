@@ -21,6 +21,8 @@ namespace CveInfo
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    client.Timeout = TimeSpan.FromMinutes(1); // Set a longer timeout (e.g., 5 minutes)
+
                     HttpResponseMessage response = await client.GetAsync(apiEndpoint);
 
                     if (response.IsSuccessStatusCode)
